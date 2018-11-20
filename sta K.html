@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name=”viewport” content=”width=device-width, initial-scale=1″ />
+		<title>明星K歌</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<link href="css/bootstrap.css" rel="stylesheet" />
+		<script src="js/jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+		<style type="text/css">
+			body{
+				background-color: #E6E6E6;
+			}
+			li{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+				color: #000000;
+			}
+			.my-navbar {
+				background-color: #FE5047;
+             	padding:5px 0;
+             	transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+            }     
+            .my-navbar a{
+            	background:transparent !important;color:#fff !important
+            }      
+            .my-navbar a:hover {
+            	color:#45bcf9 !important;background:transparent;outline:0
+            }       
+            .my-navbar a {
+            	transition: color 0.5s ease-in-out;
+            }
+            .top-nav {
+            	padding:0;background:#FE5047;
+            }  
+            #example-navbar-collapse{
+            	margin-top: 11px;
+            	font-size: 19px;
+            }    
+            button.navbar-toggle {
+            	background-color:#fbfbfb;
+                }
+            button.navbar-toggle > span.icon-bar {
+            	background-color:#dedede
+            }
+            .conte{
+            	margin-top: 88px;
+            	border: 3px solid #FFFFFF;
+            	background-color: #FFFFFF;
+            }
+            .round{
+            	height: 500px;
+            	margin: 0;
+            	margin-top: 23px;
+            	padding: 0;
+            } 
+            .bt{
+            	margin-top: 8px;
+            }
+            .bt a button{
+            	padding: 8px 13px;
+            	color: #000000;
+            	background-color: #FFFFFF;
+            }
+            .logo img{
+            	margin-top: 14px;
+            }
+            .Tn{
+            	margin: 0;
+            	padding: 0;
+            	border-left: 8px solid #FF734E;
+            	display: block;
+            	padding-bottom:10px ;
+            	border-bottom: 1px solid #E6E6E6;
+            }
+			.Tn li{
+				margin-left: 18px;
+				font-size: 23px;
+			}
+			.more a{
+				text-decoration: none;
+				font-size: 19px;
+			}
+			.more a:hover{
+				color: #FF734E;
+			}
+			.imge{
+				margin-bottom: 43px;
+			}
+			.imge img{
+				margin: 19px 0;
+				cursor: pointer;
+		    	transition: all 0.6s;
+			}
+			.imge img:hover{
+				transform: scale(1.1);
+			}
+			.imge a{
+				font-size: 18px;
+				text-decoration: none;
+			}
+			.imge a:hover{
+				color: #FF734E;
+			}
+			.sta{
+				margin: 33px 8px;
+				text-align: center;
+			}
+			.sta a{
+				text-decoration: none;
+			}
+			.sta img{
+				cursor: pointer;
+		    	transition: all 0.6s;
+		    	margin-bottom: 28px;
+			}
+			.sta img:hover{
+		    	transform: scale(1.1);
+		    }
+			.sta p{
+				color: #FF734E;
+				text-align: center;
+				margin: 18px 0;
+				font-size: 18px;
+			}
+			.sta span{
+				font-size: 19px;
+			}
+			.stat{
+				margin-top: 34px;
+			}
+			.stat p{
+				color: #FF734E;
+				font-size: 18px;
+			}
+			.stat img{
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+			}
+			.footer1{
+				margin-top: 65px;
+				padding-top: 43px;
+            	background-color: #333333;
+            }
+            .mgt32 a{
+            	color:#D3CDD0;
+            	text-decoration: none;
+            }
+            .mgt32 p{
+            	color:#D3CDD0;
+            	padding-bottom: 5px;
+            	font-size: 23px;
+            }
+            .mgt32 a:hover{
+            	color: #737373;
+            }
+            .footer2{
+            	background-color: #000000;
+            	color: #FFFFFF;
+            	padding: 18px 0;
+            }
+		</style>
+	</head>
+	<body>
+		<!--导航栏-->
+		<nav class="navbar navbar-fixed-top my-navbar col-md-12 col-xs-12" role="navigation">  
+			<div class="col-md-2 col-xs-2 logo text-center"><img src="img/kmlogo.png"></div>
+			<div class="container-fluid">           
+				<div class="navbar-header">               
+					<button type="button" class="navbar-toggle" data-toggle="collapse"  data-target="#example-navbar-collapse"> 
+						<span class="sr-only">切换导航</span>         
+						<span class="icon-bar"></span>             
+						<span class="icon-bar"></span>            
+						<span class="icon-bar"></span>        
+					</button>           
+				</div> 
+				<div class="collapse navbar-collapse " id="example-navbar-collapse">   
+					<ul class="nav navbar-nav col-md-6">             
+						<li class="active"><a href="Kmi.html">首页</a></li>      
+						<li><a href="VIP.html">会员中心</a></li>            
+						<li><a href="sta K.html">明星K歌</a></li>
+						<li><a href="direct.html">直播</a></li>
+						<li><a href="#">我的K米</a></li> 
+					</ul>        
+				    <div class="col-md-2 col-xs-2 text-right bt">
+					   <a><button type="button" class="btn">登录</button></a>
+					   <a><button type="button" class="btn">注册</button></a>
+				    </div>
+				</div>
+			</div>   
+		</nav> 
+        <div class="container conte" >
+        	<!--轮播-->
+            <div class="col-md-12 round">
+			<div class="carousel slide" id="slidershow" data-ride = "carousel">
+				<ol class="carousel-indicators">
+					<li class="active" data-target="#slidershow" data-slide-to="0"></li>
+					<li data-target="#slidershow" data-slide-to="1"></li>
+					<li data-target="#slidershow" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="img/publicaccount_1518082579.jpg" style="width: 1200px; height: 476px;"/>
+					</div>
+					<div class="item">
+						<img src="img/publicaccount_1517475806.jpg" style="width: 1200px; height: 476px;"/>
+					</div>
+					<div class="item">
+						<img src="img/publicaccount_1515056473.jpg" style="width: 1200px; height: 476px;"/>
+					</div>
+				</div>
+			</div>
+		    </div>
+		    <!--Top news-->
+		    <div class="col-md-12">
+		    	<ul class="Tn col-md-12 col-xs-12">
+		    		<li class="col-md-6 col-xs-6">Top news</li>
+		    		<li class="text-right more"><a href="#">更多</a></li>
+		    	</ul>
+		    	<div class="col-md-12 row imge">
+		    		<div class="col-md-12" style="margin-bottom: 28px;">
+		    		<div class="col-md-4">
+		    			<a href="#">
+		    				<img src="img/publicaccount_1539152286.jpg" width="100%" />
+		    			       【教学】三个技巧教你如何演唱《十年》
+		    			</a>
+		    		</div>
+		    		<div class="col-md-4">
+		    			<a href="#">
+		    				<img src="img/publicaccount_1538996749.jpg" width="100%" />
+		    			       【一周挑战】节后余生:唱出国庆长假h后的心声《十年》
+		    			</a>
+		    		</div>
+		    		<div class="col-md-4">
+		    			<a href="#">
+		    				<img src="img/publicaccount_1538983825.jpg" width="100%" />
+		    			         江湖快报
+		    			</a>
+		    		</div>
+		    		</div>
+		    		<div class="col-md-12">
+		    		<div class="col-md-4">
+		    			<a href="#">
+		    				<img src="img/publicaccount_1538299224.jpg" width="100%" />
+		    			     一周热榜VOL.110
+		    			</a>
+		    		</div>
+		    		<div class="col-md-4">
+		    			<a href="#">
+		    				<img src="img/publicaccount_1539152286.jpg" width="100%" />
+		    			       【教学】如何运用真假音转化？
+		    			</a>
+		    		</div>
+		    		<div class="col-md-4">
+		    			<a href="#">
+		    				<img src="img/publicaccount_1538190028.jpg" width="100%" />
+		    			         火星直播-周福布斯盘点
+		    			</a>
+		    		</div>
+		    		</div>
+		    	</div>
+		    </div>
+		    <!--明星-->
+		    <div class="col-md-12">
+		    	<ul class="Tn col-md-12 col-xs-12">
+		    		<li class="col-md-6 col-xs-6">明星</li>
+		    		<li class="text-right more"><a href="#">更多</a></li>
+		    	</ul>
+		    	<div class="row col-md-2 sta tz-gallery">
+		    		<a href="#"><img src="img/766313693_200_200.jpg" width="100%" class="img-circle">
+		    		<p>今天又懒得加班</p>
+		    		</a>
+		    	</div>
+		    	<div class="row col-md-2 sta">
+		    		<a href="#"><img src="img/844630668_200_200.jpg" width="100%" class="img-circle">
+		    		<p>花生FM</p>
+		    		</a>
+		    	</div>
+		    	<div class="row col-md-2 sta">
+		    		<a href="#"><img src="img/486450345_200_200.jpg" width="100%" class="img-circle">
+		    		<p>_胖胖胖_</p>
+		    		</a>
+		    	</div>
+		    	<div class="row col-md-2 sta">
+		    		<a href="#"><img src="img/747793557_200_200.jpg" width="100%" class="img-circle">
+		    		<p>张旸---妖哥快跑</p>
+		    		</a>
+		    	</div>
+		    	<div class="row col-md-2 sta">
+		    		<a href="#"><img src="img/846190135_200_200.jpg" width="100%" class="img-circle">
+		    		<p>许多葵</p>
+		    		</a>
+		    	</div>
+		    </div>
+		    <div class="col-md-12">
+		    	<ul class="Tn col-md-12 col-xs-12">
+		    		<li class="col-md-6 col-xs-6">明星作品</li>
+		    		<li class="text-right more"><a href="#">更多</a></li>
+		    	</ul>
+		    	<div class="col-md-12 ">
+		    		<ul class="stat col-md-3">
+		    			<img src="img/maobuyi.jpg" />
+		    			<h4>不染</h4>
+		    			<p>周鱼儿和声</p>
+		    		</ul>
+		    		<ul class="stat col-md-3">
+		    			<img src="img/pingxingxian.jpg" />
+		    			<h4>平行线</h4>
+		    			<p>聂诗Ss</p>
+		    		</ul>
+		    		<ul class="stat col-md-3">
+		    			<img src="img/choubaguai.jpg" />
+		    			<h4>丑八怪</h4>
+		    			<p>蓝烟_Eric</p>
+		    		</ul>
+		    		<ul class="stat col-md-3">
+		    			<img src="img/yanhuo.jpg" />
+		    			<h4>烟火里的尘埃</h4>
+		    			<p>黄霄雲</p>
+		    		</ul>
+		    	</div>
+		    </div>
+		    <div class="col-md-12">
+		    	<ul class="Tn col-md-12 col-xs-12">
+		    		<li class="col-md-6 col-xs-6">入驻机构</li>
+		    		<li class="text-right more"><a href="#">更多</a></li>
+		    	</ul>
+		    	<div class="row col-md-2 sta tz-gallery text-center">
+		    		<a href="#"><img src="img/793246852_200_200.jpg" width="100%" class="img-circle">
+		    		<span>极创引力</span>
+		    		</a>
+		    	</div>
+		    	<div class="row col-md-2 sta">
+		    		<a href="#"><img src="img/793562942_200_200.jpg" width="100%" class="img-circle">
+		    		<span>黄钧泽音乐工作室</span>
+		    		</a>
+		    	</div>
+		    	<div class="row col-md-2 sta">
+		    		<a href="#"><img src="img/793114311_200_200.jpg" width="100%" class="img-circle">
+		    		<span>众乐纪科夫</span>
+		    		</a>
+		    	</div>
+		    	<div class="row col-md-2 sta text-center">
+		    		<a href="#"><img src="img/4_200_200.jpg" width="100%" class="img-circle">
+		    		<span>雪漫舍</span>
+		    		</a>
+		    	</div>
+		    	<div class="row col-md-2 sta">
+		    		<a href="#"><img src="img/793331765_200_200.jpg" width="100%" class="img-circle">
+		    		<span>北京麦爱文化传播有限公司</span>
+		    		</a>
+		        </div>
+		    </div>
+		    <div class="col-md-12 imge">
+		    	<ul class="Tn col-md-12 col-xs-12">
+		    		<li class="col-md-6 col-xs-6">合作机构</li>
+		    		<li class="text-right more"><a href="#">更多</a></li>
+		    	</ul>
+		    	<div class="col-md-12 row">
+		    		<ul class="stat col-md-1">
+		    			<a href="https://weibo.com/"><img src="img/weibo.jpg" width="100%" /></a>
+		    		</ul>
+		    		<ul class="stat col-md-1">
+		    			<a href="https://v.qq.com/"><img src="img/tencent.jpg" /></a>
+		    		</ul>
+		    		<ul class="stat col-md-1">
+		    			<a href="http://www.iqiyi.com/"><img src="img/iqiyi.jpg" /></a>
+		    		</ul>
+		    		<ul class="stat col-md-1">
+		    			<a href="http://www.youku.com/"><img src="img/youku.jpg" /></a>
+		    		</ul>
+		    		<ul class="stat col-md-1">
+		    			<a href="http://www.moji.com/"><img src="img/moji.jpg" /></a>
+		    		</ul>
+		    		<ul class="stat col-md-1">
+		    			<a href="https://tieba.baidu.com/index.html"><img src="img/tieba.jpg" /></a>
+		    		</ul>
+		    	</div>
+		    </div> 
+        </div>
+        <!--页脚-->
+        <footer>
+        	<div class="footer1 col-md-12 col-xs-12">
+        		<div class="container">
+        		<div class="col-md-3 col-xs-3 text-left mgt32">
+        			<p><a href="index.html">K米首页</a></p>
+        			<p><a href="#">K米官方博客</a></p>
+        			<p><a href="#">关于&帮助</a></p>
+        			<p><a href="#">服务条款</a></p>
+        			<p><a href="#">上传伴奏</a></p>
+        		</div>
+        		<div class="col-md-3 col-xs-3 text-left mgt32">
+        			<p>联系与合作</p>
+        			<p><a href="#">联系我们</a></p>
+        			<p><a href="#">用户反馈</a></p>
+        		</div>
+        		<div class="col-md-3 col-xs-3 text-left mgt32">
+        			<p>友情链接</a>
+        			<p><a href="#">星网视易</a></p>
+        		</div>
+        		<div class="col-md-3 col-xs-3 text-left mgt32">
+        			<p>关注我们</a>
+        			<p><a href="#">新浪微博:@K米网</a></p>
+        			<p><a href="#">官方QQ：200107359</a></p>
+        			<p><a href="#">官方微信：<img src="img/weixin_qr.jpg"></a></p>
+        		</div>
+        		</div>
+        	</div>
+        	<div class="footer2 col-md-12 text-center">
+        			<span>© ktvme 福建凯米网络科技有限公司   | 闽ICP备16000020号-1  </span>
+        			<img src="img/hy_83x30.png" />
+        	</div>
+        </footer>
+    <!--导航栏-->
+    <script>     
+			$(window).scroll(function () {     
+				if ($(".navbar").offset().top > 50) {$(".navbar-fixed-top").addClass("top-nav");      
+				}else {$(".navbar-fixed-top").removeClass("top-nav");}   
+			})
+	</script>
+	<!--轮播取消鼠标触停 -->
+	<script>
+	$('#slidershow').carousel({
+     pause: 'none'
+    });
+	</script>
+	</body>
+	
+</html>
